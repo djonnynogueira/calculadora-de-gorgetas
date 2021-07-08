@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- chamando o css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Calculadora de gorgetas 1.0</title>
+</head>
+<body>
+    <!-- container  -->
+    <div id="container">
+        <div>
+            <h1 class="title">Calculadora de gorgetas</h1>
+        </div>
+
+        <div>
+            <form class="tipsForm" id="tipsForm">
+                <label for="bill">
+                    <p>Quanto ficou a conta?</p>
+                </label>
+                <p>
+                    R$ <input type="number" name="bill" id="bill" placeholder="100" class="formInput" required>
+                </p>
+                <label for="service-quality">
+                    <p>Como foi seu serviço?</p>
+                </label>
+                <p>
+                    <select name="service-quality" id="service-quality" class="formSelect" required>
+                        <option value="">Escolha uma opção:</option>
+                        <option value="0.30">30% - Incrível</option>
+                        <option value="0.20">20% - Bom</option>
+                        <option value="0.15">15% - Aceitável</option>
+                        <option value="0.10">10% - Ruim</option>
+                        <option value="0.05">05% - Péssimo</option>
+                    </select>
+                </p>
+                <label for="pessoas">
+                    <p>Quantas pessoas vão dividir a conta?</p>
+                </label>
+                <p>
+                    <input type="number" id="pessoas" placeholder="1" class="formInput" required> pessoa(s)
+                </p>
+                <button type="submit" class="formSubmit">Calcular</button>
+            </form>
+        </div>
+        <!-- resultado dos cálculos -->
+        <div id="totalTip">
+            Gorgeta total:
+            R$ <span id="tip">0.00</span>
+            <span id="each">cada</span>
+        </div>
+    </div>
+    <!-- chamando o javascript -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
